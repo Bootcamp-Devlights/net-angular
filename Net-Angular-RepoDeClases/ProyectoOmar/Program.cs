@@ -1,4 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+//Profe aqui puse la direccion de mi repositorio de git por si no funciona el archivo que subi
+// https://github.com/odv144/net-angular/tree/main/Net-Angular-RepoDeClases/ProyectoOmar
+
+
 //ejercicio 1
 /*
 int nro;
