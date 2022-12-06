@@ -5,6 +5,7 @@ A continuación, un compendio de líneas de ejemplo de lo que vimos en la clase 
 #region Built-in_Types
 ////Built-in Types
 //numericos
+using System.Security.Cryptography.X509Certificates;
 ///Value Types
 byte tipo1;
 sbyte tipo2;
@@ -27,8 +28,10 @@ string tipo14 = "palabra";
 //Algunos de las anteriores variables fueron inicializadas, otras no
 //También se puede inferir el tipo de dato usando var (es decir, dejar que el framework deduzca el tipo de dato según el valor asignado)
 //ej
-var numero = 1;
-
+var numero = tipo14;
+dynamic variable1 = 5;
+variable1 = "Palabra";
+variable1 = true;
 /*
  Recuerden que las variables pueden tener cualquier nombre, pero respetando lo siguiente:
 puede:
@@ -63,9 +66,39 @@ var valorCalculado = (((1 + 6) / 7) - 1) * 2;
 ///Incremento, de a 1
 var incremento = 1;
 incremento++; //Incrementa la variable en uno, a partir de aquí el valor es 2
+incremento = incremento + 1;
 
 ///Concatenación
 var saludo = "Hola " + "Mundo";
+
+//Scope1
+int scope1 = 1;
+if(true)
+{
+    //Scope2
+    scope1++;
+    int scope2 = 1;
+    scope2++;
+    if(true)
+    {
+        //Scope3
+        scope2--;
+        int scope3 = 1;
+        scope3++;
+    }
+    else
+    {
+        //scope3++;
+        scope2++;
+    }
+    //scope3++;
+}
+else
+{
+    //scope2++;
+}
+//scope3++;
+//scope2++;
 
 ///Lógicos y Relacionales
 //Esto se va a ver mejor cuando se usen los condicionales, pero los operadores son
@@ -99,7 +132,7 @@ if (incremento == 2)
     Console.WriteLine("ES DOS");
 
 //if-else
-if ((incremento % 2) == 0)
+if ((incremento % 2) == 0) 
 {
     Console.WriteLine("ES PAR");
 }
@@ -113,6 +146,13 @@ if ((incremento % 2) == 0)
     Console.WriteLine("ES PAR");
 else
     Console.WriteLine("NO ES PAR. ES IMPAR");
+
+// A y B // A y (B o C)
+int A = 0; int B = 0; int C = 0;
+if (A > 0 && (B > 0 || C > 0))
+{
+
+}
 
 //Aquí se puede utilizar el llamado operador ternario usando ? y :
 var texto = (incremento % 2) == 0 ? "ES PAR" : "NO ES PAR. ES IMPAR";
@@ -134,18 +174,44 @@ else
     Console.WriteLine("NO SE QUE ES");
 }
 
+if (A > 0)
+{
+    
+}
+else
+{
+    if (true)
+    {
+
+    }
+    else
+    {
+        if (true)
+        {
+
+        }
+        else
+        {
+
+        }
+    }
+}
+
 //Switch. Existe para básicamente evitar el anidamiento de if-else
 //Se lo usa cuando existen más de dos condiciones a evaluar
-switch (incremento)
+var message2 = "";
+switch (incremento) //swtich(incremento)
 {
     case 1:
         Console.WriteLine("UNO");
+        message2 = "UNO";
         break;
     case 2:
     case 3:
         break;
     case <= 0:
         Console.WriteLine("MENOR O IGUAL A CERO");
+
         break;
     case > 0 and <= 10:
         Console.WriteLine("MAS GRANDE QUE CERO Y MENOR A DIEZ");
@@ -156,9 +222,10 @@ switch (incremento)
     default:
         break;
 }
+Console.WriteLine(message2);
 
 //Una nueva forma de escribir la sentencia Switch en C#
-var message = incremento switch
+var message = incremento switch //var message = incremento switch
 {
     <= 0 => "Less than or equal to 0",
     > 0 and <= 10 => "More than 0 but less than or equal to 10",
@@ -171,17 +238,18 @@ int valor = 63;
 switch (valor)
 {
     case int n when (n >= 100):
-        Console.WriteLine($"I am 100 or above: {n}");
+        Console.WriteLine($"I am 100 or above: {n++}");
         break;
 
     case int n when (n < 100 && n >= 50):
-        Console.WriteLine($"I am between 99 and 50: {n}");
+        Console.WriteLine($"I am between 99 and 50: {n++}");
         break;
 
     case int n when (n < 50):
-        Console.WriteLine($"I am less than 50: {n}");
+        Console.WriteLine($"I am less than 50: {n++}");
         break;
 }
+Console.WriteLine(valor);
 
 ///Repetitivas
 //for
@@ -217,8 +285,8 @@ do
 //foreach
 //Es un for resumido, que se usa para recorrer elementos de un conjunto de datos
 //Por ahora lo usaremos con el tipo string, que es un conjunto de char
-string cadena = "Un conjunto de caracteres";
-foreach (char c in cadena)
+string cadena = "Un conjunto de caracteres"; //Cadena de caracteres //Colección de caracteres
+foreach (var c in cadena)
 {
     Console.WriteLine(c);
 }
