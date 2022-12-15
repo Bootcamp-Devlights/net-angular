@@ -1,5 +1,6 @@
 ﻿//Arriba: Lineas de codigo
 using ConsoleApp_Clase3_Ejemplo;
+using ConsoleApp_Clase3_Ejemplo.Clases;
 
 ///Instanciación y seteo de properties
 ///

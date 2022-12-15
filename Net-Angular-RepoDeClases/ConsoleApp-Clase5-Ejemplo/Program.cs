@@ -147,8 +147,126 @@ Console.WriteLine("Capacity: " + lista4.Capacity);
 
 #endregion
 
+#region ArrayMethods
+///Array - Methods
+Array.Clear(arreglo1);
+var nuevoArreglo = arreglo1.Clone();
+
+Array.Copy(arreglo1, arreglo2, 10);
+arreglo1.CopyTo(arreglo2, 10);
+
+// parametros (nombres) => deficion
+//Pregunta si en arreglo1 "Existe" un item que "cumpla con la condición del predicado"
+var flag = Array.Exists(arreglo1, item => item == 2 );
+
+var primervalor = Array.Find(arreglo1, item => item > 0);
+var ultimovalor = Array.FindLast(arreglo1, item => item > 0);
+
+var valores = Array.FindAll(arreglo1, item => item > 0);
+
+var indiceprimero = Array.FindIndex(arreglo1, item => item > 0);
+if(indiceprimero < 0)
+{
+    //No existe un elemento que cumpla la condición
+}
+else
+{
+    //existe un elemento
+}
+
+var indiceultimo = Array.FindLastIndex(arreglo1, item => item > 0);
+if (indiceultimo < 0)
+{
+    //No existe un elemento que cumpla la condición
+}
+else
+{
+    //existe un elemento
+}
+
+Array.ForEach(arreglo1, 
+    item => {
+        if (item > 2)
+            item--;
+        else
+            item++;
+    }
+);
+
+var longitud = arreglo1.GetLength(1);
+var item = arreglo1.GetValue(2);
+//var item = arreglo1[2];
+arreglo1.SetValue(8, 2);
+//arreglo1[2] = 8;
+var arregloreverted = arreglo1.Reverse();
+
+var indice2 = Array.IndexOf(arreglo1, 8);
+Array.Resize(ref arreglo1, 15);
+Array.Sort(arreglo1);
+#endregion
+
+#region ListMethods
+lista1.Add("palabra2");
+lista2.AddRange(lista4);
+lista2.Clear();
+var flag2 = lista1.Contains("palabra");
+lista2.CopyTo(arreglo1);
+lista2.Equals(lista4);
+var flag3 = lista1.Exists(item => item == "palabra");
+var valorString = lista1.Find(item => item.Contains('p'));
+lista1.ForEach(item =>
+{
+    item = item.ToUpper();
+});
+var indicePalabra = lista1.IndexOf("palabra");
+
+lista2.Insert(2, 5);
+lista2.InsertRange(2, lista4);
+lista2.Remove(8);
+lista2.RemoveAll(item => item < 0);
+lista2.RemoveRange(2, 5);
+lista2.RemoveAt(2);
+lista2.Reverse();
+lista2.Sort();
+
+//join, union, select, where, order
+var flag4 = lista2.All(item => item > 0);
+var flag5 = lista2.Any(item => item > 0);
+var listanueva = lista2.Concat(lista4);
+var listaunica = lista2.Distinct();
+var element = lista1.ElementAt(2);
+var listaExcept = lista2.Except(lista4);
+var element2 = lista1.First(item => item == "hola mundo");
+var element3 = lista1.FirstOrDefault(item => item == "hola mundo");
+var element4 = lista3.FirstOrDefault(item => item.id > 0 && item.name == "");
+//Last
+//LastOrDefault
+
+var valor5 = lista2.Max();
+var valor4 = lista3.Max(item => item.Score);
+
+var nuevaLista2 = lista3.Where(o => o.Score > 50).Select(item => item.Score).Sum();
+var ordererLista = lista3.OrderBy(o => o.Score);
+//lista2.Join(lista4, x => x, x => x, x => x);
+var nuevaLista3 = lista2.Union(lista4);
+
+#endregion
+
 public class MiClase
 {
     public int id;
     public string name;
+
+    public int Score { get; set; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="num"></param>
+    /// <returns></returns>
+    public int MyMethod(int num)
+    {
+        Console.WriteLine();
+        return 1;
+    }
 }

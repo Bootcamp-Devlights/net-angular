@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp_Clase3_Ejemplo
+namespace ConsoleApp_Clase3_Ejemplo.Clases
 {
-    public class Autor: Persona, IPersona
+    public class Autor : Persona, IPersona
     {
         //Propiedades
         public string Nombre { get; set; }

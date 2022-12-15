@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp_Clase3_Ejemplo
+namespace ConsoleApp_Clase3_Ejemplo.Clases
 {
-    public class Estudiante: Persona, IPersona, IUser
+    public class Estudiante : Persona, IPersona, IUser
     {
         //Field o Campo
         private int _edad;
@@ -31,7 +31,7 @@ namespace ConsoleApp_Clase3_Ejemplo
         public string Name { get; set; }
         public string LastName { get; set; }
         public int Id { get; set; }
-        
+
         //2022-12-07
         //07/12/2022 //12/07/2022
 
