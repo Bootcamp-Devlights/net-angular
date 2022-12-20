@@ -1,6 +1,8 @@
-﻿#region Array
-///Array single dimensional or unidimensional
+﻿using ConsoleApp_Clase3_Ejemplo.Clases;
+
+#region Array
 //1ra forma de declaración
+///Array single dimensional or unidimensional
 int[] arreglo1 = new int[10]; //Índice de 0 a 9
 //Indice Siempre es un entero
 //Setear un valor del arreglo (usando el índice)
@@ -28,9 +30,9 @@ for (int i = 0; i < arreglo1.Length; i++)
     arreglo1[i] = i + 1;
 }
 
-foreach(int item in arreglo1)
+foreach(int item1 in arreglo1)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(item1);
 }
 
 ///Array multidimensional
@@ -63,9 +65,9 @@ for (int i = 0; i < 3; i++)
 }
 
 //Recorrido
-foreach (int item in arreglo2dim)
+foreach (int item2 in arreglo2dim)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(item2);
 }
 
 ///Array Jagged (Arreglo de arreglos)
@@ -91,11 +93,11 @@ for (int i = 0; i < arregloJagged.Length; i++)
     }
 }
 
-foreach (int[] item in arregloJagged)
+foreach (int[] item3 in arregloJagged)
 {
-    foreach (int item2 in item)
+    foreach (int item4 in item3)
     {
-        Console.WriteLine(item2);
+        Console.WriteLine(item4);
     }
 };
 
@@ -128,18 +130,18 @@ for (int i = 0; i < lista4.Count; i++)
     Console.WriteLine(lista4[i]);
 }
 
-foreach(var item in lista4)
+foreach(var item5 in lista4)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(item5);
 }
 
 lista4.Add(1);
 lista4.Add(2);
 lista4.Add(3);
 
-foreach (var item in lista4)
+foreach (var item6 in lista4)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(item6);
 }
 
 Console.WriteLine("Count: " + lista4.Count);

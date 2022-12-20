@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleApp-Clase3-Ejemplo\ConsoleApp-Clase3-Ejemplo.csproj" />
+  </ItemGroup>
+
 </Project>

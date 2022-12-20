@@ -1,7 +1,8 @@
-﻿//Arriba: Lineas de codigo
+﻿///Arriba: using
 using ConsoleApp_Clase3_Ejemplo;
 using ConsoleApp_Clase3_Ejemplo.Clases;
 
+///Top-Level Statements
 ///Instanciación y seteo de properties
 ///
 //Instanciamos un estudiante
@@ -41,10 +42,4 @@ Console.WriteLine(nombreCompleto2);
 
 Console.WriteLine(unEstudiante.GetDateOfBirth());
 
-
-//Abajo: clases
-//Aquí tb podemos definir clases
-public class otraClase
-{
-
-}
+///Abajo: namespaces y classes

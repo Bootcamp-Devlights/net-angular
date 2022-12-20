@@ -3,13 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>ConsoleApp_Clase3_Ejemplo</RootNamespace>
+    <RootNamespace>ConsoleApp_Clase7_Ejemplo</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp-Clase2-Ejemplo\ConsoleApp-Clase2-Ejemplo.csproj" />
+    <ProjectReference Include="..\ConsoleApp-Clase3-Ejemplo\ConsoleApp-Clase3-Ejemplo.csproj" />
   </ItemGroup>
 
 </Project>
