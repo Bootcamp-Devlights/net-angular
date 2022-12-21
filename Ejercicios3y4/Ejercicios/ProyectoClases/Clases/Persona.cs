@@ -19,7 +19,7 @@ namespace ProyectoClases.Clases
         {
 
         }
-        public Persona(string nombre, string apellido, DateTime fNac, Smartphone celular)
+        public Persona(string nombre, string apellido, DateTime fNac, Smartphone celular=null)
         {
             this.Nombre = nombre;
             this.Apellido = apellido;

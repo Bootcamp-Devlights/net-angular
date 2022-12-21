@@ -120,7 +120,7 @@ namespace ProyectoClases.Clases
         {
             if (Pasajeros == 0)
             {
-                Console.WriteLine("La capacidad del vehiculo es: " + _capacidad + " y tiene " + Pasajeros + " de pasajeros");
+                Console.WriteLine("La capacidad del vehiculo es: " + _capacidad + " y tiene " + Pasajeros + " pasajeros");
                 Pasajeros = nro;
                 for (int x=0; x < nro; x++)
                 {

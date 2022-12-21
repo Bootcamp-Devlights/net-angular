@@ -1,5 +1,5 @@
 ﻿using ProyectoClases.Clases;
-using System.Reflection.PortableExecutable;
+
 #region Ejercicio 1 de la guia 2
 /*
 Ejercicios ObjEjercicio = new Ejercicios();
@@ -41,16 +41,14 @@ Console.WriteLine(usuario.NombreCompleto("Omar","Virili"));
 /*
 Persona usuario = new Persona();
 usuario.setFechaNac(new DateTime(1984, 02, 28));
-Console.WriteLine(usuario.getFechaNac());
+Console.WriteLine($"Edad del usuario: {usuario.getFechaNac()}");
 */
 #endregion
 
 #region Ejercicio 5 de la guia 2
 /*
-Auto coche = new Auto("Fuego", "Renault", "Rojo");
+Auto coche = new Auto("Fuego", "Renault", "Rojo",5);
 Console.WriteLine(coche.Encender());
-Console.WriteLine(coche.Encender());
-Console.WriteLine(coche.Apagar());
 Console.WriteLine(coche.Apagar());
 */
 #endregion
@@ -58,19 +56,19 @@ Console.WriteLine(coche.Apagar());
 #region Ejercicio 6 de la guia 2
 /*
 Mascota animal = new Mascota("Uma",0);
-Console.WriteLine(animal.getNombre());
+Console.WriteLine(animal.nombre);
 Console.WriteLine(animal.tipo);
 animal.alimentar();
-Console.WriteLine(animal.getEnergia());
+Console.WriteLine(animal.energia);
 animal.alimentar();
-Console.WriteLine(animal.getEnergia());
+Console.WriteLine(animal.energia);
 for(int i = 0; i < 10; i++)
 {
     animal.alimentar();
-    Console.WriteLine(animal.getEnergia());
+    Console.WriteLine(animal.energia);
 }
-
 */
+
 #endregion
 
 #region Ejercicio 7 de la guia 2
@@ -124,10 +122,10 @@ celu.mute();
 
 #region Ejercicio 9 de la guia 2
 /*
-Auto coche = new Auto("Fuego", "Renault", "Rojo");
-coche.acelerar();
-Console.WriteLine(coche.Encender());
-coche.acelerar();
+Auto coche = new Auto("Fuego", "Renault", "Rojo",5);
+coche.Conductor = new Persona("Omar Dario","Virili",new DateTime(1984, 02, 28));
+coche.AsignarConductor();
+coche.Encender();
 coche.acelerar();
 coche.acelerar();
 coche.acelerar();
@@ -143,8 +141,8 @@ Console.WriteLine($"Velocidad: {coche.getVelocidad()}");
 Console.WriteLine($"Aceleracion: {coche.getAceleracion()}");
 
 Console.WriteLine(coche.Apagar());
-*/
 
+*/
 #endregion
 
 #region Ejercicio 10 de la guia 2
@@ -159,7 +157,7 @@ cliente.MostrarDatos();
 
 #region Ejercicio 11 de la guia 2
 /*
-Auto coche = new Auto("Fuego", "Renault", "Rojo");
+Auto coche = new Auto("Fuego", "Renault", "Rojo",5);
 
 coche.AsignarConductor();
 Console.WriteLine(coche.Encender());
@@ -168,16 +166,16 @@ Console.WriteLine(coche.Apagar());
 #endregion
 
 #region Ejercicio 12 de la guia 2
-/*
-Auto coche = new Auto("Fuego", "Renault", "Rojo");
-coche.Capacidad = 5;
+
+Auto coche = new Auto("Fuego", "Renault", "Rojo",5);
+//coche.Pasajeros = 2;
 coche.AsignarPasajero(3);
-*/
+
 
 #endregion
 
 #region Ejercicio 13 de la guia 2
-
+/*
 Auto coche = new Auto("Fuego", "Renault", "Rojo",5);
 Mascota animal = (new Mascota("Tilin", Mascota.TipoAnimal.perro));
 
@@ -187,7 +185,7 @@ animal.Tamanio = "Grande";
 Console.WriteLine(coche.LlevarMascota(animal));
 //Tarea: Hacer el cambio de regazo de la mascota eh implementar lo del tamaño del animal
 
-
+*/
 #endregion
 
 #region Ejercicio 14 de la guia 2
