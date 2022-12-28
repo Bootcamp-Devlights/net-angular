@@ -8,36 +8,44 @@ namespace WebApplication_API.Controllers
     [ApiController]
     public class LibrosController : ControllerBase
     {
-        // GET: api/<LibrosController>
+        // GET: api/libros
         [HttpGet]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<LibrosController>/5
+        // GET api/libros/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<LibrosController>
+        // POST api/libros //Datos no vienen en la url
+        // Header
+        // Body
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            //Creando un libro nuevo
         }
 
-        // PUT api/<LibrosController>/5
+        // PUT api/libros/5
+        // Header
+        // Body
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
+            //Actualizar un libro ya existente, representado por el id
         }
 
         // DELETE api/<LibrosController>/5
         [HttpDelete("{id}")]
+        // Header
         public void Delete(int id)
         {
+            //Borra un libro ya existente, representado por el id
         }
     }
 }
