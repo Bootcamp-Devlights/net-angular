@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace InterviewApp_DAL.Models
+{
+    public class Entrevistado : Usuario
+    {
+        public Perfil Perfil
+        {
+            get => default;
+            set
+            {
+            }
+        }
+    }
+}

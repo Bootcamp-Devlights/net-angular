@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InterviewApp_DAL.Persona">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterviewApp_DAL.Usuario">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterviewApp_DAL.Pregunta">
+    <Position X="9" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Pregunta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Respuestas" />
+      <Property Name="Entrevistas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="InterviewApp_DAL.Entrevistador">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entrevistador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterviewApp_DAL.Entrevista">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAACEAAAACAAAAAAAAAAAAABIAAAAAAAA=</HashCode>
+      <FileName>Entrevista.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Entrevistado" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Feedbacks" />
+      <Property Name="Entrevistadores" />
+      <Property Name="Preguntas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="InterviewApp_DAL.Empresa">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Empresa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterviewApp_DAL.Entrevistado">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entrevistado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Perfil" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="InterviewApp_DAL.Perfil">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Perfil.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Skills" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="InterviewApp_DAL.Respuesta">
+    <Position X="9" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Respuesta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterviewApp_DAL.Feedback">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAIBACEAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Feedback.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Entrevista" />
+      <Property Name="Pregunta" />
+      <Property Name="RespuestaElegida" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="SKillEvaluado" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="InterviewApp_DAL.Skill">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterviewApp_DAL.Tecnología">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tecnología.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
