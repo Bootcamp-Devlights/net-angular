@@ -23,9 +23,16 @@ namespace Clase13_InterviewApp_DAL
             );
         }
 
-        //protected virtual void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //Seed
+            var questions = new Question[]
+            {
+                new Question() { Id = 1, Description = "Cual es tu nombre?" },
+                new Question() { Id = 2, Description = "Cual es tu edad?" }
+            };
 
-        //}
+            modelBuilder.Entity<Question>().HasData(questions);
+        }
     }
 }

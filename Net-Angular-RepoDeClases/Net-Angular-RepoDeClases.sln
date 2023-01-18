@@ -59,9 +59,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewApp_DAL", "Intervi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 13", "Clase 13", "{97E9485F-B7F7-46C6-95EA-48FA0EF7F7C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase13_InterviewApp_Console", "Clase13_InterviewApp_Console\Clase13_InterviewApp_Console.csproj", "{B6710062-1EFD-44B4-AE4E-CF4AA9AB0D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase13_InterviewApp_Console", "Clase13_InterviewApp_Console\Clase13_InterviewApp_Console.csproj", "{B6710062-1EFD-44B4-AE4E-CF4AA9AB0D8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase13_InterviewApp_DAL", "Clase13_InterviewApp_DAL\Clase13_InterviewApp_DAL.csproj", "{5E20B955-8F0B-497D-B6C5-BC6B305CDEAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clase13_InterviewApp_DAL", "Clase13_InterviewApp_DAL\Clase13_InterviewApp_DAL.csproj", "{5E20B955-8F0B-497D-B6C5-BC6B305CDEAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase13_ReverseEngineering", "Clase13_ReverseEngineering\Clase13_ReverseEngineering.csproj", "{79174E31-A62D-4AA6-865C-B4FCDEBF6425}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{5E20B955-8F0B-497D-B6C5-BC6B305CDEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E20B955-8F0B-497D-B6C5-BC6B305CDEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E20B955-8F0B-497D-B6C5-BC6B305CDEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79174E31-A62D-4AA6-865C-B4FCDEBF6425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79174E31-A62D-4AA6-865C-B4FCDEBF6425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79174E31-A62D-4AA6-865C-B4FCDEBF6425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79174E31-A62D-4AA6-865C-B4FCDEBF6425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -155,6 +161,7 @@ Global
 		{BA990ED0-C65F-4C71-AF64-1633CFC52A36} = {A1BADFD1-2F40-4D93-A63D-1890DB6D693F}
 		{B6710062-1EFD-44B4-AE4E-CF4AA9AB0D8B} = {97E9485F-B7F7-46C6-95EA-48FA0EF7F7C2}
 		{5E20B955-8F0B-497D-B6C5-BC6B305CDEAB} = {97E9485F-B7F7-46C6-95EA-48FA0EF7F7C2}
+		{79174E31-A62D-4AA6-865C-B4FCDEBF6425} = {97E9485F-B7F7-46C6-95EA-48FA0EF7F7C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B12E0BA-37DC-429C-9FEB-086B642C75F3}

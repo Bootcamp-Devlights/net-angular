@@ -4,6 +4,7 @@ using Clase13_InterviewApp_DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Clase13_InterviewApp_DAL.Migrations
 {
     [DbContext(typeof(InterviewAppContext))]
-    partial class InterviewAppContextModelSnapshot : ModelSnapshot
+    [Migration("20230118214351_SeedQuestions")]
+    partial class SeedQuestions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
