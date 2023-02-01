@@ -7,5 +7,6 @@ namespace InterviewApp_DAL.Models
 {
     public class Respuesta
     {
+        public int Id { get; set; }
     }
 }

@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace InterviewApp_DAL.Models
+namespace Clase13_InterviewApp_DAL.Models
 {
-    public class Perfil
+    public class Ansewer
     {
         public int Id { get; set; }
-        public List<Skill> Skills { get; set; }
     }
 }

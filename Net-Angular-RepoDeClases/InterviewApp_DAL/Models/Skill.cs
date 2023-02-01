@@ -7,6 +7,7 @@ namespace InterviewApp_DAL.Models
 {
     public class Skill
     {
-        public Puntaje Puntaje { get; set; }
+        public int Id { get; set; }
+        //public Puntaje Puntaje { get; set; }
     }
 }

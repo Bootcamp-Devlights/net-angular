@@ -7,5 +7,6 @@ namespace InterviewApp_DAL.Models
 {
     public class Tecnología
     {
+        public int Id { get; set; }
     }
 }

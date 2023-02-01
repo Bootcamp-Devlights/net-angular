@@ -20,6 +20,7 @@ namespace InterviewApp_AL_WebAPI.Controllers
             //Si no, lanzar un mensaje de credenciales invalidas
 
             //El error siempre debe ser en general: usuario o contraseña invalidos
+            return "";
         }
 
         //Register
@@ -33,6 +34,7 @@ namespace InterviewApp_AL_WebAPI.Controllers
             //Comparar las contraseñas (Password y RepeatedPassword) (tienen que coincidir)
             //Si son iguales, registro
             //Si no, lanzo un mensaje de error
+            return "";
         }
     }
 }

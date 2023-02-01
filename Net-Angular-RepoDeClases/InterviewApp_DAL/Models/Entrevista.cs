@@ -7,6 +7,7 @@ namespace InterviewApp_DAL.Models
 {
     public class Entrevista
     {
+        public int Id { get; set; }
         public Entrevistado Entrevistado { get; set; }
         public List<Entrevistador> Entrevistadores { get; set; }
         public DateTime? Fecha { get; set; }

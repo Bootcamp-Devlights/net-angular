@@ -7,6 +7,7 @@ namespace InterviewApp_DAL.Models
 {
     public class Feedback
     {
+        public int Id { get; set; }
         public Entrevista Entrevista { get; set; }
         public Skill SKillEvaluado { get; set; }
         public Pregunta Pregunta { get; set; }

@@ -7,5 +7,6 @@ namespace InterviewApp_DAL.Models
 {
     public class Empresa
     {
+        public int Id { get; set; }
     }
 }

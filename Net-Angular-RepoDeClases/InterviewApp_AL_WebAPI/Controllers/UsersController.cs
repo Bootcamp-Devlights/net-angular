@@ -1,5 +1,4 @@
 ﻿using InterviewApp_BL.Dtos;
-using InterviewApp_DAL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +13,7 @@ namespace InterviewApp_AL_WebAPI.Controllers
         [HttpGet]
         public List<UsuarioDto> GetUsers()
         {
-
+            return new List<UsuarioDto>();
         }
 
         //ViewUser
@@ -22,7 +21,7 @@ namespace InterviewApp_AL_WebAPI.Controllers
         [HttpGet("/{id}")]
         public UsuarioDto GetUserById(int id) 
         { 
-
+            return new UsuarioDto { Id = id };
         }
 
     }

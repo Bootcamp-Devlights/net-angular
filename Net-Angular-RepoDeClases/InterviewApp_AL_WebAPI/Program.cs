@@ -1,8 +1,14 @@
+using InterviewApp_DAL;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddDbContext<InterviewAppDbContext>(
+    options => options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = InterviewAppDatabase2"));
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

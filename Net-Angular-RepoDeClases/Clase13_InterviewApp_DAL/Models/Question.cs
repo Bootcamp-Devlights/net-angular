@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace InterviewApp_DAL.Models
+namespace Clase13_InterviewApp_DAL.Models
 {
-    public class Pregunta
+    public class Question
     {
         public int Id { get; set; }
         public string Description { get; set; }
-        public List<Entrevista> Entrevistas { get; set; }
-        public List<Respuesta> Respuestas { get; set; }
+        public List<Interview> Intreviews { get; set; }
+        public List<Ansewer> Ansewers { get; set; }
     }
 }

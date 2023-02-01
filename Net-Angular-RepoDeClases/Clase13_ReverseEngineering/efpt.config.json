@@ -1,0 +1,64 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "InterviewAppDatabaseContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Clase13_ReverseEngineering",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Ansewers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Interviewees]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Interviewers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[InterviewInterviewer]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[InterviewQuestion]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Intreviews]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Questions]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "(localdb)\\MSSQLLocalDB.InterviewAppDatabase",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
