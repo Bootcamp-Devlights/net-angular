@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace InterviewApp_DAL.Models
+namespace InterviewApp_BL.Dtos
 {
-    public class Usuario : Persona
+    public class LoginDto
     {
         public string Username { get; set; }
         public string Password { get; set; }
-        //public string PasswordHash { get; set; }
-        //public string PasswordSalt { get; set; }
     }
 }
