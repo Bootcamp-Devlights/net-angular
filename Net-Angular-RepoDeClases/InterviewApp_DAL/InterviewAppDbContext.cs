@@ -16,6 +16,8 @@ namespace InterviewApp_DAL
         public DbSet<Entrevistado> Interviewees { get; set; }
         public DbSet<Pregunta> Questions { get; set; }
         public DbSet<Respuesta> Answers { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
+        public DbSet<Tecnología> Tecnologias { get; set; }
 
         public InterviewAppDbContext(DbContextOptions<InterviewAppDbContext> options): base(options)
         {
@@ -31,6 +33,7 @@ namespace InterviewApp_DAL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             //Seed
             var questions = new Pregunta[]
             {
