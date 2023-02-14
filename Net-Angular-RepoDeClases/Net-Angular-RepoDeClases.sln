@@ -63,6 +63,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewApp_AL_WebAPI", "I
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterviewApp_BL", "InterviewApp_BL\InterviewApp_BL.csproj", "{A6A70FBA-F97F-4FFE-A285-63127B03582F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BA990ED0-C65F-4C71-AF64-1633CFC52A36} = {BA990ED0-C65F-4C71-AF64-1633CFC52A36}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 13", "Clase 13", "{97E9485F-B7F7-46C6-95EA-48FA0EF7F7C2}"
 EndProject

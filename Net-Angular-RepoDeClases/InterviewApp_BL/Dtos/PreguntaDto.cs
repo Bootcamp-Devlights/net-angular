@@ -1,4 +1,4 @@
-﻿namespace InterviewApp_AL_WebAPI.Dtos
+﻿namespace InterviewApp_BL.Dtos
 {
     public class PreguntaDto
     {
