@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<InterviewAppDbContext>(
-    options => options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = InterviewAppDatabase2"));
+    options => options.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = InterviewAppDatabase3"));
 
 builder.Services.AddScoped<IQuestionsService, QuestionsService>();
 

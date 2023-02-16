@@ -7,7 +7,8 @@ namespace InterviewApp_DAL.Models
 {
     public class Entrevistado : Usuario
     {
-        public Perfil Perfil
+        public DateTime? CreationDate { get; set; }
+        public Perfil? Perfil
         {
             get => default;
             set

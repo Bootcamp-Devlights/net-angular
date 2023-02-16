@@ -4,6 +4,7 @@ using InterviewApp_DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InterviewApp_DAL.Migrations
 {
     [DbContext(typeof(InterviewAppDbContext))]
-    partial class InterviewAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230215202915_AddTable_Users")]
+    partial class AddTable_Users
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -239,13 +241,9 @@ namespace InterviewApp_DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte[]>("PasswordHash")
+                    b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<byte[]>("PasswordSalt")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
                         .IsRequired()
@@ -269,7 +267,7 @@ namespace InterviewApp_DAL.Migrations
                     b.Property<DateTime?>("CreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PerfilId")
+                    b.Property<int>("PerfilId")
                         .HasColumnType("int");
 
                     b.HasIndex("PerfilId");
@@ -368,7 +366,9 @@ namespace InterviewApp_DAL.Migrations
                 {
                     b.HasOne("InterviewApp_DAL.Models.Perfil", "Perfil")
                         .WithMany()
-                        .HasForeignKey("PerfilId");
+                        .HasForeignKey("PerfilId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Perfil");
                 });

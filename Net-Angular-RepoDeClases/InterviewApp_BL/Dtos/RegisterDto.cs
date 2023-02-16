@@ -16,5 +16,6 @@ namespace InterviewApp_BL.Dtos
         public string Phone { get; set; }
         public string Password { get; set; }
         public string RepeatedPassword { get; set; }
+        public bool Entrevistado { get; set; }
     }
 }

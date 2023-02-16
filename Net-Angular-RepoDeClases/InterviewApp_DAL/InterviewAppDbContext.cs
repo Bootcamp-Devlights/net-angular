@@ -12,8 +12,9 @@ namespace InterviewApp_DAL
     {
         //DbSet
         public DbSet<Entrevista> Interviews { get; set; }
-        public DbSet<Entrevistador> Interviewers { get; set; }
-        public DbSet<Entrevistado> Interviewees { get; set; }
+        //public DbSet<Entrevistador> Interviewers { get; set; }
+        //public DbSet<Entrevistado> Interviewees { get; set; }
+        public DbSet<Usuario> Users { get; set; } //Table-per-herarchy TPH
         public DbSet<Pregunta> Questions { get; set; }
         public DbSet<Respuesta> Answers { get; set; }
         public DbSet<Empresa> Empresas { get; set; }
