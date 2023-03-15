@@ -1,11 +1,13 @@
 ﻿using InterviewApp_BL.Dtos;
 using InterviewApp_BL.Services;
 using InterviewApp_DAL.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InterviewApp_AL_WebAPI.Controllers
 {
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class QuestionsController : ControllerBase

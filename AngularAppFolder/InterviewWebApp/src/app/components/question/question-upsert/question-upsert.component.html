@@ -1,0 +1,11 @@
+<form [formGroup]="upsertQuestionForm" (ngSubmit)="onSubmit()">
+
+    <h1>Add/Edit Question</h1>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Question Text</mat-label>
+        <input matInput id="descripcion" type="text" formControlName="descripcion">    
+    </mat-form-field>
+    
+    <button mat-raised-button color="primary" type="submit">Guardar</button>
+</form>

@@ -1,0 +1,44 @@
+<div class="container">
+    <form class="register-form" [formGroup]="registerForm" (ngSubmit)="submitRegister()">
+        <h1 class="h3 mb-3 fw-normal">Register</h1>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="FirstName" formControlName="firstName">
+            <label for="floatingInput">FirstName</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="LastName" formControlName="lastName">
+            <label for="floatingInput">LastName</label>
+        </div>
+        <div class="form-floating">
+            <input type="date" class="form-control" id="floatingInput" placeholder="Date Of Birth" formControlName="dateOfBirth">
+            <label for="floatingInput">Date of Birth</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="City" formControlName="city">
+            <label for="floatingInput">City</label>
+        </div>
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Email" formControlName="email">
+            <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Phone" formControlName="phone">
+            <label for="floatingInput">Phone</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Repeated Password" formControlName="repeatedPassword">
+            <label for="floatingPassword">Repeated Password</label>
+        </div>
+
+        <div class="buttons">
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+            <button class="w-100 btn btn-lg btn-secondary" routerLink="/login">Login</button>
+        </div>
+        
+    </form> 
+</div>

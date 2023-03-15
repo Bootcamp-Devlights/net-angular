@@ -1,0 +1,41 @@
+<h2>Questions</h2>
+<!-- <div *ngFor="let question of questions" style="display: flex;">
+    <p style="padding-right: 10px;">{{ question.id }}</p>
+    <p>{{ question.description }}</p>
+</div> -->
+<!-- foreach(var item in arreglo) -->
+
+<h1 *ngIf="error != ''">
+    {{ error }}
+</h1>
+<button mat-raised-button color="primary" (click)="refresh()">Refresh</button>
+<button mat-icon-button [routerLink]="['/questions/upsert']">
+    <mat-icon>add</mat-icon>
+</button>
+
+<table mat-table [dataSource]="questions">
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let question"> {{ question.id }} </td>
+    </ng-container>
+    <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell *matCellDef="let question"> {{ question.description }} </td>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let question">
+            <div>
+                <button mat-icon-button [routerLink]="['/questions/upsert']" [queryParams]="{ id: question.id }">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button (click)="DeleteQuestion(question.id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
+</table>
